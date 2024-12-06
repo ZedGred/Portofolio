@@ -1,56 +1,78 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Nama Anda</h1>
-        <p>Deskripsi Singkat tentang Anda</p>
         <nav>
-            <ul>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
+            <div class="logo">
+                <h1>My Portfolio</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Ini adalah bagian tentang Anda. Ceritakan sedikit tentang latar belakang, keahlian, dan minat Anda.</p>
-    </section>
+    <main>
+        <section id="home" class="home">
+            <div class="home-content">
+                <h2>Hello, I'm [Your Name]</h2>
+                <p>A Web Developer & Designer</p>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Proyek Saya</h2>
-        <div class="project">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi singkat tentang proyek 1.</p>
-            <a href="https://link-ke-proyek-1.com">Lihat Proyek</a>
-        </div>
-        <div class="project">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi singkat tentang proyek 2.</p>
-            <a href="https://link-ke-proyek-2.com">Lihat Proyek</a>
-        </div>
-        <div class="project">
-            <h3>Proyek 3</h3>
-            <p>Deskripsi singkat tentang proyek 3.</p>
-            <a href="https://link-ke-proyek-3.com">Lihat Proyek</a>
-        </div>
-    </section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Profile Picture">
+                <p>Deskripsi singkat tentang diri Anda...</p>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Kontak Saya</h2>
-        <p>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/username">linkedin.com/in/username</a></p>
-    </section>
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-container">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project Name</h3>
+                    <p>Deskripsi singkat project</p>
+                </div>
+                <!-- Tambahkan project lainnya -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 Nama Anda. Semua hak dilindungi.</p>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
