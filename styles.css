@@ -1,0 +1,100 @@
+:root {
+    --black: #121212;
+    --green: #00ff00;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Navigation Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li a {
+    color: var(--green);
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: var(--white);
+}
+
+/* Sections Styling */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.home {
+    background: linear-gradient(45deg, var(--black), #003300);
+}
+
+.home-content {
+    text-align: center;
+}
+
+.home-content h2 {
+    color: var(--green);
+    font-size: 3rem;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    background-color: var(--green);
+    color: var(--black);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.contact input, 
+.contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #222;
+    border: 1px solid var(--green);
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--green);
+    color: var(--black);
+    text-align: center;
+    padding: 20px;
+}
